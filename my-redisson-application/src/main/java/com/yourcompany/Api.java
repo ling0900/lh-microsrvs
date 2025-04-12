@@ -13,7 +13,6 @@ public class Api {
 
     @GetMapping("/a")
     public String get() {
-//        redissManager.createLock("a");
         return "Hello";
     }
 }
