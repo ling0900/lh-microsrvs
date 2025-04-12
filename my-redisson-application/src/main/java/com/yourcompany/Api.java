@@ -1,6 +1,8 @@
 package com.yourcompany;
 
 import com.yourcompany.redisson.redismanager.RedissManager;
+import org.redisson.Redisson;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,12 +16,18 @@ import org.springframework.web.bind.annotation.RestController;
 })
 public class Api {
 
+//    @Autowired
+//    RedissManager redissManager;
+
+//    @Autowired
+//    RedissonClient redissonClient;
+
     @Autowired
-    RedissManager redissManager;
+    Redisson redisson;
 
     @GetMapping("/a")
     public String get() {
-        redissManager.createLock("a");
+//        redissManager.createLock("a");
         return "Hello";
     }
 }
