@@ -1,15 +1,13 @@
-package com.yourcompany;
+package com.yourcompany.servivce;
 
-import com.yourcompany.servivce.TestImpl;
+import com.yourcompany.TestImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.DependsOn;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 //@DependsOn(value = {"iTest"})
 public class ZApi {
     @Autowired
-    //@Lazy
-
+//    @Lazy
     private TestImpl test;
 }

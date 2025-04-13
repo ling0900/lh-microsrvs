@@ -1,4 +1,4 @@
-package com.yourcompany.servivce;
+package com.yourcompany;
 
 public class TestImpl implements ITest{
 }

@@ -1,8 +1,5 @@
-package com.yourcompany.con;
+package com.yourcompany;
 
-import com.yourcompany.servivce.ITest;
-import com.yourcompany.servivce.TestImpl;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
